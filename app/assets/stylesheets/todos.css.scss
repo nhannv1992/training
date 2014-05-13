@@ -1,0 +1,22 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+table {
+	border-collapse:collapse;
+}
+table th {
+	background:#e3e3e3;
+	font-weight:bold;
+}
+
+table td, table th {
+	padding:5px 20px;
+	text-align:center;
+	border:1px solid #adadad;
+}
+table tr td:first-child {
+	text-align:left;
+}
+.checked {
+	text-decoration: line-through;
+}

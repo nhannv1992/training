@@ -1,0 +1,12 @@
+<div class="notice">
+	<%= notice %>
+</div>
+<%= render @user %>
+<div class="posts">
+	<h3>User posts list</h3>
+	<%= render @user.posts %>
+</div>
+<div class="posts_form">
+	<%= render file: "posts/new" %>
+</div>
+<%= link_to "Update information", edit_user_path %>

@@ -1,0 +1,23 @@
+<h1>Index view of users</h1>
+<table>
+	<thead>
+		<tr>
+			<th>#</th><th>Username</th><th>Password</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |user| %>
+		<tr>
+		<td></td>
+		<td>
+			<%= user.username %>
+		</td>
+		<td>
+			<%= user.password %>
+		</td>
+	</tr>
+	<%	end	%>
+</tbody>
+</table>
+
+<%= link_to "Add new user", new_user_path %>

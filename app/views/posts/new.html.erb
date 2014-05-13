@@ -1,0 +1,13 @@
+<%= form_for([@user, @user.posts.new])  do |f| %>
+	<div class="field">
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div class="field">
+		<%= f.label :body %>
+		<%= f.text_field :body %>
+	</div>
+	<div class="field">
+		<%= f.submit "Add new" %>
+	</div>
+<% end %>

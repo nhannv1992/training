@@ -1,0 +1,12 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<%= render @post %>
+<div class="notice"><%= notice %></div>
+<div class="comment-form">
+	<h3>Comments</h3>
+	<div class="comments">
+		<%= render @post.comments %>
+	</div>
+	<%= render file: 'comments/new' %>
+</div>
